@@ -10,12 +10,19 @@
 		E60D89D624152E5E00ACA654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D89D524152E5E00ACA654 /* AppDelegate.swift */; };
 		E60D89D824152E5E00ACA654 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D89D724152E5E00ACA654 /* SceneDelegate.swift */; };
 		E60D89DA24152E5E00ACA654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D89D924152E5E00ACA654 /* ViewController.swift */; };
-		E60D89DD24152E5E00ACA654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60D89DB24152E5E00ACA654 /* Main.storyboard */; };
 		E60D89E024152E5E00ACA654 /* Yoose.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E60D89DE24152E5E00ACA654 /* Yoose.xcdatamodeld */; };
 		E60D89E224152E6300ACA654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E60D89E124152E6300ACA654 /* Assets.xcassets */; };
 		E60D89E524152E6300ACA654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60D89E324152E6300ACA654 /* LaunchScreen.storyboard */; };
 		E60D89F024152E6300ACA654 /* YooseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D89EF24152E6300ACA654 /* YooseTests.swift */; };
 		E60D89FB24152E6300ACA654 /* YooseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D89FA24152E6300ACA654 /* YooseUITests.swift */; };
+		E60D8A0924152F7400ACA654 /* CountriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D8A0824152F7400ACA654 /* CountriesList.swift */; };
+		E60D8A0B2415381600ACA654 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D8A0A2415381600ACA654 /* FeedViewController.swift */; };
+		E60D8A0D2415382800ACA654 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D8A0C2415382800ACA654 /* CountriesViewController.swift */; };
+		E60D8A0F241538F800ACA654 /* feedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D8A0E241538F800ACA654 /* feedTableViewCell.swift */; };
+		E60D8A1124153A7000ACA654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60D8A1024153A7000ACA654 /* Main.storyboard */; };
+		E60D8A1224153A7000ACA654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60D8A1024153A7000ACA654 /* Main.storyboard */; };
+		E60D8A1324153A7000ACA654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60D8A1024153A7000ACA654 /* Main.storyboard */; };
+		E63A94D6241544EE0089B404 /* CountriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63A94D5241544EE0089B404 /* CountriesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +47,6 @@
 		E60D89D524152E5E00ACA654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E60D89D724152E5E00ACA654 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E60D89D924152E5E00ACA654 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E60D89DC24152E5E00ACA654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E60D89DF24152E5E00ACA654 /* Yoose.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Yoose.xcdatamodel; sourceTree = "<group>"; };
 		E60D89E124152E6300ACA654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E60D89E424152E6300ACA654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +57,12 @@
 		E60D89F624152E6300ACA654 /* YooseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YooseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E60D89FA24152E6300ACA654 /* YooseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YooseUITests.swift; sourceTree = "<group>"; };
 		E60D89FC24152E6300ACA654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E60D8A0824152F7400ACA654 /* CountriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesList.swift; sourceTree = "<group>"; };
+		E60D8A0A2415381600ACA654 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		E60D8A0C2415382800ACA654 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		E60D8A0E241538F800ACA654 /* feedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedTableViewCell.swift; sourceTree = "<group>"; };
+		E60D8A1024153A7000ACA654 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E63A94D5241544EE0089B404 /* CountriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +113,19 @@
 		E60D89D424152E5E00ACA654 /* Yoose */ = {
 			isa = PBXGroup;
 			children = (
+				E60D8A1024153A7000ACA654 /* Main.storyboard */,
+				E63A94D5241544EE0089B404 /* CountriesTableViewCell.swift */,
 				E60D89D524152E5E00ACA654 /* AppDelegate.swift */,
 				E60D89D724152E5E00ACA654 /* SceneDelegate.swift */,
 				E60D89D924152E5E00ACA654 /* ViewController.swift */,
-				E60D89DB24152E5E00ACA654 /* Main.storyboard */,
+				E60D8A0E241538F800ACA654 /* feedTableViewCell.swift */,
+				E60D8A0A2415381600ACA654 /* FeedViewController.swift */,
+				E60D8A0C2415382800ACA654 /* CountriesViewController.swift */,
 				E60D89E124152E6300ACA654 /* Assets.xcassets */,
 				E60D89E324152E6300ACA654 /* LaunchScreen.storyboard */,
 				E60D89E624152E6300ACA654 /* Info.plist */,
 				E60D89DE24152E5E00ACA654 /* Yoose.xcdatamodeld */,
+				E60D8A0824152F7400ACA654 /* CountriesList.swift */,
 			);
 			path = Yoose;
 			sourceTree = "<group>";
@@ -235,9 +252,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E60D8A1124153A7000ACA654 /* Main.storyboard in Resources */,
 				E60D89E524152E6300ACA654 /* LaunchScreen.storyboard in Resources */,
 				E60D89E224152E6300ACA654 /* Assets.xcassets in Resources */,
-				E60D89DD24152E5E00ACA654 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E60D8A1224153A7000ACA654 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E60D8A1324153A7000ACA654 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,9 +282,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E60D89DA24152E5E00ACA654 /* ViewController.swift in Sources */,
+				E60D8A0F241538F800ACA654 /* feedTableViewCell.swift in Sources */,
+				E63A94D6241544EE0089B404 /* CountriesTableViewCell.swift in Sources */,
+				E60D8A0D2415382800ACA654 /* CountriesViewController.swift in Sources */,
 				E60D89E024152E5E00ACA654 /* Yoose.xcdatamodeld in Sources */,
 				E60D89D624152E5E00ACA654 /* AppDelegate.swift in Sources */,
 				E60D89D824152E5E00ACA654 /* SceneDelegate.swift in Sources */,
+				E60D8A0B2415381600ACA654 /* FeedViewController.swift in Sources */,
+				E60D8A0924152F7400ACA654 /* CountriesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +325,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E60D89DB24152E5E00ACA654 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E60D89DC24152E5E00ACA654 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E60D89E324152E6300ACA654 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
