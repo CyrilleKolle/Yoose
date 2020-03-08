@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E60D89D624152E5E00ACA654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D89D524152E5E00ACA654 /* AppDelegate.swift */; };
+		E60D89D824152E5E00ACA654 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D89D724152E5E00ACA654 /* SceneDelegate.swift */; };
+		E60D89DA24152E5E00ACA654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D89D924152E5E00ACA654 /* ViewController.swift */; };
+		E60D89DD24152E5E00ACA654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60D89DB24152E5E00ACA654 /* Main.storyboard */; };
+		E60D89E024152E5E00ACA654 /* Yoose.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E60D89DE24152E5E00ACA654 /* Yoose.xcdatamodeld */; };
+		E60D89E224152E6300ACA654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E60D89E124152E6300ACA654 /* Assets.xcassets */; };
+		E60D89E524152E6300ACA654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60D89E324152E6300ACA654 /* LaunchScreen.storyboard */; };
+		E60D89F024152E6300ACA654 /* YooseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D89EF24152E6300ACA654 /* YooseTests.swift */; };
+		E60D89FB24152E6300ACA654 /* YooseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D89FA24152E6300ACA654 /* YooseUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E60D89EC24152E6300ACA654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E60D89CA24152E5E00ACA654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E60D89D124152E5E00ACA654;
+			remoteInfo = Yoose;
+		};
+		E60D89F724152E6300ACA654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E60D89CA24152E5E00ACA654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E60D89D124152E5E00ACA654;
+			remoteInfo = Yoose;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E60D89D224152E5E00ACA654 /* Yoose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yoose.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E60D89D524152E5E00ACA654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E60D89D724152E5E00ACA654 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E60D89D924152E5E00ACA654 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E60D89DC24152E5E00ACA654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E60D89DF24152E5E00ACA654 /* Yoose.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Yoose.xcdatamodel; sourceTree = "<group>"; };
+		E60D89E124152E6300ACA654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E60D89E424152E6300ACA654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E60D89E624152E6300ACA654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E60D89EB24152E6300ACA654 /* YooseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YooseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E60D89EF24152E6300ACA654 /* YooseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YooseTests.swift; sourceTree = "<group>"; };
+		E60D89F124152E6300ACA654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E60D89F624152E6300ACA654 /* YooseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YooseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E60D89FA24152E6300ACA654 /* YooseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YooseUITests.swift; sourceTree = "<group>"; };
+		E60D89FC24152E6300ACA654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E60D89CF24152E5E00ACA654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60D89E824152E6300ACA654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60D89F324152E6300ACA654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E60D89C924152E5E00ACA654 = {
+			isa = PBXGroup;
+			children = (
+				E60D89D424152E5E00ACA654 /* Yoose */,
+				E60D89EE24152E6300ACA654 /* YooseTests */,
+				E60D89F924152E6300ACA654 /* YooseUITests */,
+				E60D89D324152E5E00ACA654 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E60D89D324152E5E00ACA654 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E60D89D224152E5E00ACA654 /* Yoose.app */,
+				E60D89EB24152E6300ACA654 /* YooseTests.xctest */,
+				E60D89F624152E6300ACA654 /* YooseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E60D89D424152E5E00ACA654 /* Yoose */ = {
+			isa = PBXGroup;
+			children = (
+				E60D89D524152E5E00ACA654 /* AppDelegate.swift */,
+				E60D89D724152E5E00ACA654 /* SceneDelegate.swift */,
+				E60D89D924152E5E00ACA654 /* ViewController.swift */,
+				E60D89DB24152E5E00ACA654 /* Main.storyboard */,
+				E60D89E124152E6300ACA654 /* Assets.xcassets */,
+				E60D89E324152E6300ACA654 /* LaunchScreen.storyboard */,
+				E60D89E624152E6300ACA654 /* Info.plist */,
+				E60D89DE24152E5E00ACA654 /* Yoose.xcdatamodeld */,
+			);
+			path = Yoose;
+			sourceTree = "<group>";
+		};
+		E60D89EE24152E6300ACA654 /* YooseTests */ = {
+			isa = PBXGroup;
+			children = (
+				E60D89EF24152E6300ACA654 /* YooseTests.swift */,
+				E60D89F124152E6300ACA654 /* Info.plist */,
+			);
+			path = YooseTests;
+			sourceTree = "<group>";
+		};
+		E60D89F924152E6300ACA654 /* YooseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E60D89FA24152E6300ACA654 /* YooseUITests.swift */,
+				E60D89FC24152E6300ACA654 /* Info.plist */,
+			);
+			path = YooseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E60D89D124152E5E00ACA654 /* Yoose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E60D89FF24152E6300ACA654 /* Build configuration list for PBXNativeTarget "Yoose" */;
+			buildPhases = (
+				E60D89CE24152E5E00ACA654 /* Sources */,
+				E60D89CF24152E5E00ACA654 /* Frameworks */,
+				E60D89D024152E5E00ACA654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yoose;
+			productName = Yoose;
+			productReference = E60D89D224152E5E00ACA654 /* Yoose.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E60D89EA24152E6300ACA654 /* YooseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E60D8A0224152E6300ACA654 /* Build configuration list for PBXNativeTarget "YooseTests" */;
+			buildPhases = (
+				E60D89E724152E6300ACA654 /* Sources */,
+				E60D89E824152E6300ACA654 /* Frameworks */,
+				E60D89E924152E6300ACA654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E60D89ED24152E6300ACA654 /* PBXTargetDependency */,
+			);
+			name = YooseTests;
+			productName = YooseTests;
+			productReference = E60D89EB24152E6300ACA654 /* YooseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E60D89F524152E6300ACA654 /* YooseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E60D8A0524152E6300ACA654 /* Build configuration list for PBXNativeTarget "YooseUITests" */;
+			buildPhases = (
+				E60D89F224152E6300ACA654 /* Sources */,
+				E60D89F324152E6300ACA654 /* Frameworks */,
+				E60D89F424152E6300ACA654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E60D89F824152E6300ACA654 /* PBXTargetDependency */,
+			);
+			name = YooseUITests;
+			productName = YooseUITests;
+			productReference = E60D89F624152E6300ACA654 /* YooseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E60D89CA24152E5E00ACA654 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Indigo´sDad";
+				TargetAttributes = {
+					E60D89D124152E5E00ACA654 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					E60D89EA24152E6300ACA654 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E60D89D124152E5E00ACA654;
+					};
+					E60D89F524152E6300ACA654 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E60D89D124152E5E00ACA654;
+					};
+				};
+			};
+			buildConfigurationList = E60D89CD24152E5E00ACA654 /* Build configuration list for PBXProject "Yoose" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E60D89C924152E5E00ACA654;
+			productRefGroup = E60D89D324152E5E00ACA654 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E60D89D124152E5E00ACA654 /* Yoose */,
+				E60D89EA24152E6300ACA654 /* YooseTests */,
+				E60D89F524152E6300ACA654 /* YooseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E60D89D024152E5E00ACA654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60D89E524152E6300ACA654 /* LaunchScreen.storyboard in Resources */,
+				E60D89E224152E6300ACA654 /* Assets.xcassets in Resources */,
+				E60D89DD24152E5E00ACA654 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60D89E924152E6300ACA654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60D89F424152E6300ACA654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E60D89CE24152E5E00ACA654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60D89DA24152E5E00ACA654 /* ViewController.swift in Sources */,
+				E60D89E024152E5E00ACA654 /* Yoose.xcdatamodeld in Sources */,
+				E60D89D624152E5E00ACA654 /* AppDelegate.swift in Sources */,
+				E60D89D824152E5E00ACA654 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60D89E724152E6300ACA654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60D89F024152E6300ACA654 /* YooseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60D89F224152E6300ACA654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60D89FB24152E6300ACA654 /* YooseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E60D89ED24152E6300ACA654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E60D89D124152E5E00ACA654 /* Yoose */;
+			targetProxy = E60D89EC24152E6300ACA654 /* PBXContainerItemProxy */;
+		};
+		E60D89F824152E6300ACA654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E60D89D124152E5E00ACA654 /* Yoose */;
+			targetProxy = E60D89F724152E6300ACA654 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E60D89DB24152E5E00ACA654 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E60D89DC24152E5E00ACA654 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E60D89E324152E6300ACA654 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E60D89E424152E6300ACA654 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E60D89FD24152E6300ACA654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E60D89FE24152E6300ACA654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E60D8A0024152E6300ACA654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Yoose/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cy.Yoose;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E60D8A0124152E6300ACA654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Yoose/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cy.Yoose;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E60D8A0324152E6300ACA654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YooseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cy.YooseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yoose.app/Yoose";
+			};
+			name = Debug;
+		};
+		E60D8A0424152E6300ACA654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YooseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cy.YooseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yoose.app/Yoose";
+			};
+			name = Release;
+		};
+		E60D8A0624152E6300ACA654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YooseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cy.YooseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Yoose;
+			};
+			name = Debug;
+		};
+		E60D8A0724152E6300ACA654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YooseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cy.YooseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Yoose;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E60D89CD24152E5E00ACA654 /* Build configuration list for PBXProject "Yoose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E60D89FD24152E6300ACA654 /* Debug */,
+				E60D89FE24152E6300ACA654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E60D89FF24152E6300ACA654 /* Build configuration list for PBXNativeTarget "Yoose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E60D8A0024152E6300ACA654 /* Debug */,
+				E60D8A0124152E6300ACA654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E60D8A0224152E6300ACA654 /* Build configuration list for PBXNativeTarget "YooseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E60D8A0324152E6300ACA654 /* Debug */,
+				E60D8A0424152E6300ACA654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E60D8A0524152E6300ACA654 /* Build configuration list for PBXNativeTarget "YooseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E60D8A0624152E6300ACA654 /* Debug */,
+				E60D8A0724152E6300ACA654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E60D89DE24152E5E00ACA654 /* Yoose.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E60D89DF24152E5E00ACA654 /* Yoose.xcdatamodel */,
+			);
+			currentVersion = E60D89DF24152E5E00ACA654 /* Yoose.xcdatamodel */;
+			path = Yoose.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E60D89CA24152E5E00ACA654 /* Project object */;
+}
