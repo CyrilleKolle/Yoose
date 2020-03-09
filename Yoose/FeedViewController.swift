@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
+import FirebaseFirestore
 
 class FeedViewController: UIViewController {
 
@@ -18,6 +21,47 @@ class FeedViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+       // saveDataInFarebase()
+        loadFeeds()
+    }
+    
+    
+    @IBAction func signOutButton(_ sender: Any) {
+        self.signUserOut()
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "cell") as! FeedViewController
+        let navigationController = UINavigationController(rootViewController: vc)
+          self.present(navigationController, animated: true, completion: nil)
+        
+    }
+    func signUserOut (){
+        
+        let firebaseAuth = Auth.auth()
+        do {
+          try firebaseAuth.signOut()
+           
+        } catch let signOutError as NSError {
+          print ("Error signing out: %@", signOutError)
+        }
+    }
+    
+//    func saveDataInFarebase(){
+//        var ref: DatabaseReference!
+//
+//        ref = Database.database().reference(withPath: "Feeds")
+//        print("reference key\(ref.key)")
+//       // self.ref.child("users").child(user.uid).setValue(["username": username])
+//        //let ref = Database.database().reference(withPath: "grocery-items")
+//    }
+    func loadFeeds(){
+        let db = Firestore.firestore()
+        db.collection("feeds").getDocuments { (snapshot, error) in
+            if error == nil && snapshot != nil{
+                
+//                for document in snapshot!.documents{
+//                 //   let documentData =  document.data()
+//                }
+            }
+        }
     }
 }
 extension FeedViewController: UITableViewDelegate, UITableViewDataSource{
@@ -27,6 +71,16 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! feedTableViewCell
+        let db = Firestore.firestore()
+        db.collection("feeds").getDocuments { (snapshot, error) in
+            if error == nil && snapshot != nil{
+                
+                for document in snapshot!.documents{
+                    let documentData =  document.data()
+                    cell.postInCell.text = documentData["feeds"] as? String
+                }
+            }
+        }
         
         return cell
     }

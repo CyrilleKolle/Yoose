@@ -36,6 +36,7 @@ class CountriesViewController: UIViewController, UITableViewDataSource, UITableV
             //searchController.searchResultsUpdater = self
             navigationItem.searchController = searchController
        }
+  
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isSearching{
