@@ -9,9 +9,11 @@
 import UIKit
 import FirebaseAuth
 import FirebaseFirestore
+import Hero
 
 
 class SignUppViewController: UIViewController {
+     var panGR: UIPanGestureRecognizer!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var email: UITextField!
     
@@ -22,9 +24,9 @@ class SignUppViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         setUpElements()
     }
+
     
     func setUpElements(){
         
@@ -96,9 +98,10 @@ class SignUppViewController: UIViewController {
         error.alpha = 1
     }
     func transitionView(){
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "cell") as! FeedViewController
-                     let navigationController = UINavigationController(rootViewController: vc)
-                       self.present(navigationController, animated: true, completion: nil)
+  
+        let vc = storyboard?.instantiateViewController(identifier: "cellNav") as? NavgationViewController
+        view.window?.rootViewController = vc
+        view.window?.makeKeyAndVisible()
     }
     /*
     // MARK: - Navigation

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import ViewAnimator
 class ProfileViewController: UIViewController,UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
 
@@ -22,7 +22,8 @@ class ProfileViewController: UIViewController,UINavigationControllerDelegate, UI
     var firstName = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let animation = AnimationType.zoom(scale: 1.5)
+        view.animate(animations: [animation])
         // Do any additional setup after loading the view.
         saveButtonOutlet.layer.cornerRadius = 20
         let defaults = UserDefaults.standard
@@ -33,6 +34,13 @@ class ProfileViewController: UIViewController,UINavigationControllerDelegate, UI
             firstName = "Welcome"
         }
         saveNameInfos()
+    }
+    func zoomtransition(){
+        let animation = AnimationType.zoom(scale: 1.5)
+        view.animate(animations: [animation])
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        zoomtransition()
     }
     func saveNameInfos(){
          let defaults = UserDefaults.standard

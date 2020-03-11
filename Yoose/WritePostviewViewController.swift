@@ -9,55 +9,47 @@ import UIKit
 import FirebaseDatabase
 import Firebase
 import FirebaseFirestore
+import ViewAnimator
 
 
-class WritePostviewViewController: UIViewController {
+class WritePostviewViewController: UIViewController,UINavigationControllerDelegate, UIImagePickerControllerDelegate  {
+    
+    
+    @IBOutlet weak var viewOnImage: UIView!
+    
+    @IBOutlet weak var imageInput: UIImageView!
+    
+    
     @IBOutlet weak var writeInputPost: UITextView!
+    var imagePicker:UIImagePickerController!
     
     @IBOutlet weak var writeLabelInput: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let db = Firestore.firestore()
-            //db.collection("feeds").addDocument(data: ["post":"postCreated"])
-//        let newPost = db.collection("feeds").document()
-//        newPost.setData(["post":"postCreated"])
-        
-//        db.collection("feeds").addDocument(data: ["post":"post"]){(error) in
-//            if let error = error {
-//               print("there was an error saving to firebase: \(error)")
-//            }
-//            else{
-//                let newPost = db.collection("feeds").document()
-//                newPost.setData(["post":"postCreated"])
-//            }
-//
-//        }
-        // Do any additional setup after loading the view.
-        //db.collection("feeds").document().delete() --> delete
-       // db.collection("feeds").document().updateData(["type":FieldValue.delete()]) -->delete particular data
+        zoomtransition()
+        viewOnImage.alpha = 0
+        //let db = Firestore.firestore()
+
     }
+    override func viewWillAppear(_ animated: Bool) {
+        zoomtransition()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        zoomtransition()
+    }
+    func zoomtransition(){
+        let animation = AnimationType.zoom(scale: 1.5)
+        view.animate(animations: [animation])
+    }
+      func transitionView(){
+    
+          let vc = storyboard?.instantiateViewController(identifier: "cell") as? FeedViewController
+          view.window?.rootViewController = vc
+          view.window?.makeKeyAndVisible()
+      }
     
     @IBAction func PostButton(_ sender: Any) {
-//        var ref: DatabaseReference!
-//
-//        ref = Database.database().reference(withPath: "Feeds")
-//        let postText = writeLabelInput.text
-//        let saveAction = UIAlertAction(title: "Save",
-//                                       style: .default) { _ in
-//            // 1
-////            guard let textField = alert.textFields?.first,
-////              let text = textField.text else { return }
-//
-//            // 2
-//            var feedItems  = [String:String]()
-//            let groceryItem = feedItems(name: postText,
-//                                   addedByUser: self.user.email,
-//                                     completed: false)
-//            // 3
-//            let groceryItemRef = self.ref.child(postText.lowercased())
-//
-//            // 4
-//            groceryItemRef.setValue(groceryItem.toAnyObject())
+
         let postText = writeInputPost.text
         
         let db = Firestore.firestore()
@@ -70,15 +62,46 @@ class WritePostviewViewController: UIViewController {
                 print("Data successfully saved")
                   let newPost = db.collection("feeds").document()
                   newPost.setData(["post":"postCreated"])
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "cell") as! FeedViewController
-              let navigationController = UINavigationController(rootViewController: vc)
-                self.present(navigationController, animated: true, completion: nil)
+                self.transitionView()
               }
               
           }
         }
         
+    @IBAction func cameraButtonForView(_ sender: Any) {
+        viewOnImage.alpha = 1
     }
+    
+    @IBAction func imageButtonForLibrary(_ sender: Any) {
+        
+        viewOnImage.alpha = 0
+        let image = UIImagePickerController ()
+                   image.delegate = self
+                   image.sourceType = UIImagePickerController.SourceType.photoLibrary
+                   image.allowsEditing = false
+                   self.present(image, animated: true) {
+                       
+                   }
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+          if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+              imageInput.image = image
+          }
+      }
+    
+    @IBAction func imageButtonForCamera(_ sender: Any) {
+        viewOnImage.alpha = 0
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType .camera) {
+                 let imagePicker = UIImagePickerController()
+                 imagePicker.delegate = self
+              imagePicker.sourceType = UIImagePickerController.SourceType.camera
+                 imagePicker.allowsEditing = false
+                 self.present(imagePicker, animated: true, completion: nil)
+             }
+         
+    }
+    
+}
     
     /*
     // MARK: - Navigation

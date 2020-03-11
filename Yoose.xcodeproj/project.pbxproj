@@ -38,9 +38,15 @@
 		E64D261924166D59000A0E9E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64D260F24166D58000A0E9E /* HomeViewController.swift */; };
 		E64D261A24166D59000A0E9E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64D260F24166D58000A0E9E /* HomeViewController.swift */; };
 		E64D261B24166D59000A0E9E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64D260F24166D58000A0E9E /* HomeViewController.swift */; };
+		E67000F124191D6F008639C1 /* TabBarViewControllerr.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67000F024191D6F008639C1 /* TabBarViewControllerr.swift */; };
+		E67000F224191D6F008639C1 /* TabBarViewControllerr.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67000F024191D6F008639C1 /* TabBarViewControllerr.swift */; };
+		E67000F324191D6F008639C1 /* TabBarViewControllerr.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67000F024191D6F008639C1 /* TabBarViewControllerr.swift */; };
 		E6FAA44F24167AB200AB71EA /* SignUppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FAA44E24167AB200AB71EA /* SignUppViewController.swift */; };
 		E6FAA45124167ACD00AB71EA /* SignInnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FAA45024167ACD00AB71EA /* SignInnViewController.swift */; };
 		E6FAA4552416863500AB71EA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FAA4542416863500AB71EA /* ProfileViewController.swift */; };
+		E6FAA45724178C1D00AB71EA /* NavgationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FAA45624178C1D00AB71EA /* NavgationViewController.swift */; };
+		E6FAA45824178C1D00AB71EA /* NavgationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FAA45624178C1D00AB71EA /* NavgationViewController.swift */; };
+		E6FAA45924178C1D00AB71EA /* NavgationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FAA45624178C1D00AB71EA /* NavgationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,9 +100,11 @@
 		E64D2608241647FF000A0E9E /* WritePostviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritePostviewViewController.swift; sourceTree = "<group>"; };
 		E64D260C24166D55000A0E9E /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		E64D260F24166D58000A0E9E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E67000F024191D6F008639C1 /* TabBarViewControllerr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewControllerr.swift; sourceTree = "<group>"; };
 		E6FAA44E24167AB200AB71EA /* SignUppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUppViewController.swift; sourceTree = "<group>"; };
 		E6FAA45024167ACD00AB71EA /* SignInnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInnViewController.swift; sourceTree = "<group>"; };
 		E6FAA4542416863500AB71EA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E6FAA45624178C1D00AB71EA /* NavgationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavgationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,10 +184,12 @@
 			isa = PBXGroup;
 			children = (
 				E60D8A1024153A7000ACA654 /* Main.storyboard */,
+				E67000F024191D6F008639C1 /* TabBarViewControllerr.swift */,
 				E64D2608241647FF000A0E9E /* WritePostviewViewController.swift */,
 				E63A94D5241544EE0089B404 /* CountriesTableViewCell.swift */,
 				E60D89D524152E5E00ACA654 /* AppDelegate.swift */,
 				E6FAA45024167ACD00AB71EA /* SignInnViewController.swift */,
+				E6FAA45624178C1D00AB71EA /* NavgationViewController.swift */,
 				E6FAA44E24167AB200AB71EA /* SignUppViewController.swift */,
 				E64D260C24166D55000A0E9E /* Utilities.swift */,
 				E64D260F24166D58000A0E9E /* HomeViewController.swift */,
@@ -483,6 +493,7 @@
 				E60D8A0F241538F800ACA654 /* feedTableViewCell.swift in Sources */,
 				E64D261024166D59000A0E9E /* Utilities.swift in Sources */,
 				E63A94D6241544EE0089B404 /* CountriesTableViewCell.swift in Sources */,
+				E67000F124191D6F008639C1 /* TabBarViewControllerr.swift in Sources */,
 				E60D8A0D2415382800ACA654 /* CountriesViewController.swift in Sources */,
 				E64D261924166D59000A0E9E /* HomeViewController.swift in Sources */,
 				E6FAA4552416863500AB71EA /* ProfileViewController.swift in Sources */,
@@ -493,6 +504,7 @@
 				E6FAA44F24167AB200AB71EA /* SignUppViewController.swift in Sources */,
 				E60D89D824152E5E00ACA654 /* SceneDelegate.swift in Sources */,
 				E60D8A0B2415381600ACA654 /* FeedViewController.swift in Sources */,
+				E6FAA45724178C1D00AB71EA /* NavgationViewController.swift in Sources */,
 				E60D8A0924152F7400ACA654 /* CountriesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,8 +515,10 @@
 			files = (
 				E64D261124166D59000A0E9E /* Utilities.swift in Sources */,
 				E60D89F024152E6300ACA654 /* YooseTests.swift in Sources */,
+				E6FAA45824178C1D00AB71EA /* NavgationViewController.swift in Sources */,
 				E64D260A241647FF000A0E9E /* WritePostviewViewController.swift in Sources */,
 				E64D261A24166D59000A0E9E /* HomeViewController.swift in Sources */,
+				E67000F224191D6F008639C1 /* TabBarViewControllerr.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,8 +528,10 @@
 			files = (
 				E64D261224166D59000A0E9E /* Utilities.swift in Sources */,
 				E60D89FB24152E6300ACA654 /* YooseUITests.swift in Sources */,
+				E6FAA45924178C1D00AB71EA /* NavgationViewController.swift in Sources */,
 				E64D260B241647FF000A0E9E /* WritePostviewViewController.swift in Sources */,
 				E64D261B24166D59000A0E9E /* HomeViewController.swift in Sources */,
+				E67000F324191D6F008639C1 /* TabBarViewControllerr.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

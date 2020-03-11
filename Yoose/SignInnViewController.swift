@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import ViewAnimator
 
 class SignInnViewController: UIViewController {
     @IBOutlet weak var email: UITextField!
@@ -21,7 +22,8 @@ class SignInnViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-            setUpElements();
+            setUpElements()
+        zoomtransition()
         // Do any additional setup after loading the view.
     }
     func setUpElements(){
@@ -35,7 +37,10 @@ class SignInnViewController: UIViewController {
         
     }
 
-    
+    func zoomtransition(){
+        let animation = AnimationType.zoom(scale: 1.5)
+        view.animate(animations: [animation])
+    }
 
     @IBAction func signIn(_ sender: Any) {
         
@@ -48,13 +53,22 @@ class SignInnViewController: UIViewController {
                 self.error.text = errorr?.localizedDescription
                 self.error.alpha = 1
             }else{
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "cell") as! FeedViewController
-                let navigationController = UINavigationController(rootViewController: vc)
-                  self.present(navigationController, animated: true, completion: nil)
+                self.transitionView()
+
             }
             
         }
     }
+       func transitionView(){
+           // let vc = self.storyboard?.instantiateViewController(withIdentifier: "cellNav") as! NavgationViewController
+    //                     let navigationController = UINavigationController(rootViewController: vc)
+    //                       self.present(navigationController, animated: true, completion: nil)
+    //
+            
+            let vc = storyboard?.instantiateViewController(identifier: "cellNav") as? NavgationViewController
+            view.window?.rootViewController = vc
+            view.window?.makeKeyAndVisible()
+        }
     /*
     // MARK: - Navigation
 

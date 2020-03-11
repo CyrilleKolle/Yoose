@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ViewAnimator
 
 class CountriesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     @IBOutlet weak var tableView: UITableView!
@@ -24,6 +25,7 @@ class CountriesViewController: UIViewController, UITableViewDataSource, UITableV
 
     override func viewDidLoad() {
            super.viewDidLoad()
+        zoomtransition()
         navigationItem.searchController = searchController
               
               
@@ -36,6 +38,13 @@ class CountriesViewController: UIViewController, UITableViewDataSource, UITableV
             //searchController.searchResultsUpdater = self
             navigationItem.searchController = searchController
        }
+    override func viewDidAppear(_ animated: Bool) {
+        zoomtransition()
+    }
+    func zoomtransition(){
+        let animation = AnimationType.zoom(scale: 0.5)
+        view.animate(animations: [animation])
+    }
   
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
