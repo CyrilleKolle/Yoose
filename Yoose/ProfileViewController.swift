@@ -29,35 +29,22 @@ class ProfileViewController: UIViewController,UINavigationControllerDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         zoomtransition()
-        retrieveFirst()
         // Do any additional setup after loading the view.
         saveButtonOutlet.layer.cornerRadius = 20
        // saveNameInfos()
+        displayCountry()
     }
     
     func zoomtransition(){
-        let animation = AnimationType.zoom(scale: 1.5)
+        let animation = AnimationType.zoom(scale:0.5)
         view.animate(animations: [animation])
     }
     override func viewDidAppear(_ animated: Bool) {
         zoomtransition()
-        retrieveFirst()
+        displayCountry()
     }
-    func retrieveFirst(){
-        let defaults = UserDefaults.standard
-        if (defaults.object(forKey: "fn") as? String) != nil {
-                  self.firstName = firstNameOutlet.text!
 
-              } else {
-                  firstName = "anonymous"
-              }
-    }
-    func saveNameInfos(){
-         let defaults = UserDefaults.standard
-       
-           defaults.set(self.firstName, forKey: "fn")
-        
-    }
+
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
          if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
              profileImage.image = image
@@ -81,18 +68,6 @@ class ProfileViewController: UIViewController,UINavigationControllerDelegate, UI
                   self.present(image, animated: true) {
                       
                   }
-    }
-    func save(proImageUrl: URL, completion: @escaping ((_ success: Bool) -> ())){
-        
-        //guard let uid = Auth.auth().currentUser?.uid else { return}
-//
-//        let databaseRef = Storage.storage().reference().child("usersImage")
-//
-//        let userObject = ["photoUrl": proImageUrl.absoluteString] as [String:Any]
-////        databaseRef.setValue(userObject) { error, ref in
-////            //completion(error = nil)
-//
-//        }
     }
     
     @IBAction func cameProfilePicture(_ sender: Any) {
@@ -175,6 +150,28 @@ class ProfileViewController: UIViewController,UINavigationControllerDelegate, UI
                   }
                   
               }
+    }
+    func displayCountry(){
+       let db = Firestore.firestore()
+    db.collection("feeds").getDocuments { (snapshot, error) in
+             if error == nil && snapshot != nil{
+
+                 for document in snapshot!.documents{
+                     let documentData =  document.data()
+
+                     print("\(documentData)")
+
+     
+                     if let location = documentData["location"] as? String{
+                    
+                        self.countryOutlet.text = location
+                     }
+           
+             }
+
+             }
+         }
+    
     }
     @IBAction func saveInfoButton(_ sender: Any) {
         saveProfileInfoToF()

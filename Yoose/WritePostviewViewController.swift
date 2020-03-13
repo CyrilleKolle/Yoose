@@ -27,7 +27,7 @@ class WritePostviewViewController: UIViewController,UINavigationControllerDelega
     var timeArray = [String]()
     var myLocation = ""
     var myString = ""
-    var postIt = [Post]()
+    
     @IBOutlet weak var writeInputPost: UITextView!
     var imagePicker:UIImagePickerController!
     
