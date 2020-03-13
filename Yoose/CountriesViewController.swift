@@ -25,6 +25,8 @@ class CountriesViewController: UIViewController, UITableViewDataSource, UITableV
 
     override func viewDidLoad() {
            super.viewDidLoad()
+        let animation = AnimationType.zoom(scale: 1.0)
+               view.animate(animations: [animation])
         zoomtransition()
         navigationItem.searchController = searchController
               
@@ -34,7 +36,7 @@ class CountriesViewController: UIViewController, UITableViewDataSource, UITableV
            // Do any additional setup after loading the view.
         
             searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchResultsUpdater = self as? UISearchResultsUpdating
+        //searchController.searchResultsUpdater = self as? UISearchResultsUpdating
             //searchController.searchResultsUpdater = self
             navigationItem.searchController = searchController
        }
