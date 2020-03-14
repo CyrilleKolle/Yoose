@@ -45,6 +45,9 @@
 		E67000F6241A67B1008639C1 /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67000F4241A67B1008639C1 /* UpdateProfileViewController.swift */; };
 		E67000F7241A67B1008639C1 /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67000F4241A67B1008639C1 /* UpdateProfileViewController.swift */; };
 		E67000F9241B97AA008639C1 /* PostStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67000F8241B97AA008639C1 /* PostStruct.swift */; };
+		E67000FB241C1F37008639C1 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67000FA241C1F37008639C1 /* NewsFeed.swift */; };
+		E6700103241C2633008639C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D89D724152E5E00ACA654 /* SceneDelegate.swift */; };
+		E6700104241C2633008639C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D89D724152E5E00ACA654 /* SceneDelegate.swift */; };
 		E6FAA44F24167AB200AB71EA /* SignUppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FAA44E24167AB200AB71EA /* SignUppViewController.swift */; };
 		E6FAA45124167ACD00AB71EA /* SignInnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FAA45024167ACD00AB71EA /* SignInnViewController.swift */; };
 		E6FAA4552416863500AB71EA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FAA4542416863500AB71EA /* ProfileViewController.swift */; };
@@ -107,6 +110,7 @@
 		E67000F024191D6F008639C1 /* TabBarViewControllerr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewControllerr.swift; sourceTree = "<group>"; };
 		E67000F4241A67B1008639C1 /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
 		E67000F8241B97AA008639C1 /* PostStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStruct.swift; sourceTree = "<group>"; };
+		E67000FA241C1F37008639C1 /* NewsFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
 		E6FAA44E24167AB200AB71EA /* SignUppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUppViewController.swift; sourceTree = "<group>"; };
 		E6FAA45024167ACD00AB71EA /* SignInnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInnViewController.swift; sourceTree = "<group>"; };
 		E6FAA4542416863500AB71EA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				E60D89D424152E5E00ACA654 /* Yoose */,
+				E6700100241C257D008639C1 /* StoryBoards */,
 				E60D89EE24152E6300ACA654 /* YooseTests */,
 				E60D89F924152E6300ACA654 /* YooseUITests */,
 				E60D89D324152E5E00ACA654 /* Products */,
@@ -189,30 +194,10 @@
 		E60D89D424152E5E00ACA654 /* Yoose */ = {
 			isa = PBXGroup;
 			children = (
-				E60D8A1024153A7000ACA654 /* Main.storyboard */,
-				E67000F4241A67B1008639C1 /* UpdateProfileViewController.swift */,
-				E67000F024191D6F008639C1 /* TabBarViewControllerr.swift */,
-				E64D2608241647FF000A0E9E /* WritePostviewViewController.swift */,
-				E63A94D5241544EE0089B404 /* CountriesTableViewCell.swift */,
-				E60D89D524152E5E00ACA654 /* AppDelegate.swift */,
-				E6FAA45024167ACD00AB71EA /* SignInnViewController.swift */,
-				E6FAA45624178C1D00AB71EA /* NavgationViewController.swift */,
-				E6FAA44E24167AB200AB71EA /* SignUppViewController.swift */,
-				E64D260C24166D55000A0E9E /* Utilities.swift */,
-				E64D260F24166D58000A0E9E /* HomeViewController.swift */,
-				E60D89D724152E5E00ACA654 /* SceneDelegate.swift */,
-				E63A94D724163DB60089B404 /* GoogleService-Info.plist */,
-				E60D89D924152E5E00ACA654 /* ViewController.swift */,
-				E60D8A0E241538F800ACA654 /* feedTableViewCell.swift */,
-				E60D8A0A2415381600ACA654 /* FeedViewController.swift */,
-				E6FAA4542416863500AB71EA /* ProfileViewController.swift */,
-				E60D8A0C2415382800ACA654 /* CountriesViewController.swift */,
-				E60D89E124152E6300ACA654 /* Assets.xcassets */,
-				E60D89E324152E6300ACA654 /* LaunchScreen.storyboard */,
 				E60D89E624152E6300ACA654 /* Info.plist */,
-				E60D89DE24152E5E00ACA654 /* Yoose.xcdatamodeld */,
-				E60D8A0824152F7400ACA654 /* CountriesList.swift */,
-				E67000F8241B97AA008639C1 /* PostStruct.swift */,
+				E6700101241C25A6008639C1 /* supportingFiles */,
+				E67000FF241C251E008639C1 /* ViewControllers */,
+				E6700102241C2627008639C1 /* Helpers */,
 			);
 			path = Yoose;
 			sourceTree = "<group>";
@@ -233,6 +218,58 @@
 				E60D89FC24152E6300ACA654 /* Info.plist */,
 			);
 			path = YooseUITests;
+			sourceTree = "<group>";
+		};
+		E67000FF241C251E008639C1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E67000F4241A67B1008639C1 /* UpdateProfileViewController.swift */,
+				E64D2608241647FF000A0E9E /* WritePostviewViewController.swift */,
+				E67000F024191D6F008639C1 /* TabBarViewControllerr.swift */,
+				E6FAA45024167ACD00AB71EA /* SignInnViewController.swift */,
+				E6FAA44E24167AB200AB71EA /* SignUppViewController.swift */,
+				E64D260F24166D58000A0E9E /* HomeViewController.swift */,
+				E60D8A0A2415381600ACA654 /* FeedViewController.swift */,
+				E60D8A0E241538F800ACA654 /* feedTableViewCell.swift */,
+				E6FAA4542416863500AB71EA /* ProfileViewController.swift */,
+				E60D8A0C2415382800ACA654 /* CountriesViewController.swift */,
+				E60D89D924152E5E00ACA654 /* ViewController.swift */,
+				E6FAA45624178C1D00AB71EA /* NavgationViewController.swift */,
+				E63A94D5241544EE0089B404 /* CountriesTableViewCell.swift */,
+				E60D89D524152E5E00ACA654 /* AppDelegate.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E6700100241C257D008639C1 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				E60D8A1024153A7000ACA654 /* Main.storyboard */,
+				E60D89E324152E6300ACA654 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		E6700101241C25A6008639C1 /* supportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E63A94D724163DB60089B404 /* GoogleService-Info.plist */,
+				E60D89DE24152E5E00ACA654 /* Yoose.xcdatamodeld */,
+			);
+			path = supportingFiles;
+			sourceTree = "<group>";
+		};
+		E6700102241C2627008639C1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E64D260C24166D55000A0E9E /* Utilities.swift */,
+				E60D89D724152E5E00ACA654 /* SceneDelegate.swift */,
+				E67000FA241C1F37008639C1 /* NewsFeed.swift */,
+				E60D89E124152E6300ACA654 /* Assets.xcassets */,
+				E60D8A0824152F7400ACA654 /* CountriesList.swift */,
+				E67000F8241B97AA008639C1 /* PostStruct.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,6 +552,7 @@
 				E60D89D824152E5E00ACA654 /* SceneDelegate.swift in Sources */,
 				E60D8A0B2415381600ACA654 /* FeedViewController.swift in Sources */,
 				E6FAA45724178C1D00AB71EA /* NavgationViewController.swift in Sources */,
+				E67000FB241C1F37008639C1 /* NewsFeed.swift in Sources */,
 				E60D8A0924152F7400ACA654 /* CountriesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,6 +568,7 @@
 				E67000F6241A67B1008639C1 /* UpdateProfileViewController.swift in Sources */,
 				E64D261A24166D59000A0E9E /* HomeViewController.swift in Sources */,
 				E67000F224191D6F008639C1 /* TabBarViewControllerr.swift in Sources */,
+				E6700104241C2633008639C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +583,7 @@
 				E67000F7241A67B1008639C1 /* UpdateProfileViewController.swift in Sources */,
 				E64D261B24166D59000A0E9E /* HomeViewController.swift in Sources */,
 				E67000F324191D6F008639C1 /* TabBarViewControllerr.swift in Sources */,
+				E6700103241C2633008639C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,7 +742,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cy.Yoose;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -720,7 +760,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cy.Yoose;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
