@@ -1,35 +1,39 @@
 {
   "images" : [
     {
-      "idiom" : "iphone",
       "size" : "20x20",
+      "idiom" : "iphone",
+      "filename" : "logo_size_invert-7.jpg",
       "scale" : "2x"
     },
     {
       "size" : "20x20",
+      "idiom" : "iphone",
+      "filename" : "logo_size_invert-5.jpg",
+      "scale" : "3x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "logo_size_invert-6.jpg",
+      "scale" : "2x"
+    },
+    {
+      "size" : "29x29",
       "idiom" : "iphone",
       "filename" : "logo_size_invert-1.jpg",
       "scale" : "3x"
     },
     {
+      "size" : "40x40",
       "idiom" : "iphone",
-      "size" : "29x29",
+      "filename" : "logo_size_invert-4.jpg",
       "scale" : "2x"
     },
     {
-      "size" : "29x29",
-      "idiom" : "iphone",
-      "filename" : "logo_size_invert.jpg",
-      "scale" : "3x"
-    },
-    {
-      "idiom" : "iphone",
       "size" : "40x40",
-      "scale" : "2x"
-    },
-    {
       "idiom" : "iphone",
-      "size" : "40x40",
+      "filename" : "logo_size_invert-3.jpg",
       "scale" : "3x"
     },
     {
@@ -39,8 +43,9 @@
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "logo_size_invert.jpg",
       "scale" : "3x"
     },
     {
