@@ -96,6 +96,7 @@ class SignUppViewController: UIViewController {
         
         error.text = message
         error.alpha = 1
+        
     }
     func transitionView(){
   
