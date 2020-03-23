@@ -1,0 +1,6 @@
+framework module Pods_Yoose_YooseUITests {
+  umbrella header "Pods-Yoose-YooseUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
